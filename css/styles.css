@@ -1,0 +1,91 @@
+/*********************/
+/* Videos			**/
+/*********************/
+
+* {
+    box-sizing: border-box;
+  }
+  
+  body {
+    margin: 0;
+    font-family: Arial;
+    font-size: 20px;
+  }
+  
+  #myVideo {
+    position: static;
+    right: 0;
+    bottom: 0;
+    min-width: 100%; 
+    min-height: 100%;
+  }
+  
+  .content {
+    position: fixed;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5);
+    color: #f1f1f1;
+    width: 100%;
+    padding: 20px;
+  }
+  
+  #myBtn {
+    width: 200px;
+    font-size: 18px;
+    padding: 10px;
+    border: none;
+    background: #000;
+    color: #fff;
+    cursor: pointer;
+  }
+  
+  #myBtn:hover {
+    background: #ddd;
+    color: black;
+  }
+  
+  /*****************/
+  /****Videos************/
+  /*********************/
+
+
+  /*****************/
+  /****Traslate*******/
+  /****************/
+
+  .en{
+  color: #333;
+}
+.es{
+  color: #00a1ff;
+}
+.check{
+  position:relative;
+  width:50px;
+}
+.check::before{
+  content: '';
+  position:absolute;
+  width: 50px;
+  height: 25px;
+  background:#333;
+  border-radius: 25px;
+}
+.check::after{
+  content: '';
+  position: absolute;
+  width: 25px;
+  height: 25px;
+  background: #fff;
+  border-radius: 25px;
+  transition: 0.25s;
+  border: 2px solid #333;
+  box-sizing: border-box;
+}
+.check:checked:after{
+  left: 25px;
+  border: 2px solid #00a1ff;
+}
+.check:checked:before{
+  background: #00a1ff;
+}
